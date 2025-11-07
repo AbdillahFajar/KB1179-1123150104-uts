@@ -45,6 +45,7 @@ class Login extends StatelessWidget {
                 SizedBox(height: 10),
 
                 Text(
+                  textAlign: TextAlign.center,
                   "But first, you have to log in to your account. Then, we are officially dating",
                   style: TextStyle(
                     fontSize: 12.5,
