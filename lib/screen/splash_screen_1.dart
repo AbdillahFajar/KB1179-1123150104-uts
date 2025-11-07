@@ -33,6 +33,23 @@ class SplashScreen1 extends StatelessWidget {
               ),
             ),
             SizedBox(height: 15),
+
+            //membuat bullet
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //bullet ke-1
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFF8B4513),
+                  ),
+                ),
+                SizedBox(width: 10)
+              ],
+            )
           ],
         )
       )
