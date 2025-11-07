@@ -66,9 +66,30 @@ class SplashScreen1 extends StatelessWidget {
                     color: Color(0xFFD2B48C),
                   ),
                 ),
-                SizedBox(width: 10),
               ],
-            )
+            ),
+            SizedBox(height: 15),
+
+            //bikin tombol
+            Container(
+              margin: EdgeInsets.only(left: 40, right: 40),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFFD2B48C),
+                    elevation: 5
+                  ),
+                  child: Text(
+                    "I love you",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 70),
           ],
         )
       )
