@@ -111,64 +111,7 @@ class Login extends StatelessWidget {
 
                 SizedBox(height: 20),
 
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFFD2B48C),
-                        foregroundColor: Colors.black,
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadiusGeometry.circular(12),
-                        ),
-                        elevation: 2,
-                      ),
-                      child: const Text(
-                        'Log in',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 20),
-
-                    //bikin garis yang ada tulisan 'atau' di tengahnya
-                    Row(
-                      children: [
-                        Expanded(child: Divider(color: Colors.grey[300])), //garis kiri
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 12), //ini tulisan 'atau'  nya
-                          child: Text(
-                            'or',
-                            style: TextStyle(color: Colors.grey[600]),
-                          ),
-                        ),
-                        Expanded(child: Divider(color: Colors.grey[300])), //garis kanan
-                      ],
-                    ),
-
-                    SizedBox(height: 20),
-                    //Bikin tombol untuk sosial media
-                    OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
-                      label: Text(
-                        'Login with Google',
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                      style: OutlinedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          side: BorderSide(color: Colors.grey[300]!),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                
               ],
             ),
           ),
