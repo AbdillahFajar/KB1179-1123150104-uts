@@ -1,6 +1,8 @@
-# Proyek UTS
+## Proyek UTS
 
-**Tampilan awal**: ![Halaman Home](screenshots/SplashScreen1.png)
+# Tampilan awal: 
+
+![Halaman Home](screenshots/SplashScreen1.png)
 
 **Nama**: Fajar Abdillah
 
