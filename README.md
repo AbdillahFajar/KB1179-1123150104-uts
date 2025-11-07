@@ -1,4 +1,4 @@
-#Proyek UTS
+# Proyek UTS
 
 **Tampilan awal**: ![Halaman Home](screenshots/SplashScreen.png)
 
