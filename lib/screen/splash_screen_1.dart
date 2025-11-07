@@ -25,13 +25,13 @@ class SplashScreen1 extends StatelessWidget {
               ),
             ),
             SizedBox(height: 25),
-            Text(
-              "Hey!",
-              style: TextStyle(
-                fontSize: 25, 
-                fontWeight: FontWeight.bold
-              ),
-            ),
+            // Text(
+            //   "?",
+            //   style: TextStyle(
+            //     fontSize: 25, 
+            //     fontWeight: FontWeight.bold
+            //   ),
+            // ),
             SizedBox(height: 15),
 
             //membuat bullet
