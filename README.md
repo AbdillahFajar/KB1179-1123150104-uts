@@ -1,6 +1,6 @@
-## Proyek UTS
+# Proyek UTS
 
-# Tampilan awal: 
+## Tampilan awal: 
 
 ![Halaman Home](screenshots/SplashScreen1.png)
 
