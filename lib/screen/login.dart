@@ -55,7 +55,120 @@ class Login extends StatelessWidget {
 
                 SizedBox(height: 60),
 
-                
+                //TextField Email
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: 'Email',
+                    hintText: 'Enter your email address',
+                    prefixIcon: const Icon(Icons.email),
+                    //tambah border ketika field gak diklik user
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.black),
+                    ),
+                    //tambah border ketika field diklik user
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Color(0xFFD2B48C), width: 2),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 20),
+
+                //TextField Password
+                TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Password',
+                    hintText: 'Enter your password',
+                    prefixIcon: const Icon(Icons.lock_outlined),
+                    suffixIcon: const Icon(Icons.visibility_outlined),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.black),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Color(0xFFD2B48C), width: 2),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 20),
+
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Forget your password?',
+                      style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 20),
+
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFFD2B48C),
+                        foregroundColor: Colors.black,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadiusGeometry.circular(12),
+                        ),
+                        elevation: 2,
+                      ),
+                      child: const Text(
+                        'Log in',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+
+                    //bikin garis yang ada tulisan 'atau' di tengahnya
+                    Row(
+                      children: [
+                        Expanded(child: Divider(color: Colors.grey[300])), //garis kiri
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 12), //ini tulisan 'atau'  nya
+                          child: Text(
+                            'or',
+                            style: TextStyle(color: Colors.grey[600]),
+                          ),
+                        ),
+                        Expanded(child: Divider(color: Colors.grey[300])), //garis kanan
+                      ],
+                    ),
+
+                    SizedBox(height: 20),
+                    //Bikin tombol untuk sosial media
+                    OutlinedButton.icon(
+                      onPressed: () {},
+                      icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
+                      label: Text(
+                        'Login with Google',
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          side: BorderSide(color: Colors.grey[300]!),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
